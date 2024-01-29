@@ -12,7 +12,7 @@ Para instalar la biblioteca, sigue estos pasos:
 
 1. Clona este repositorio:
 
-git clone 
+git clone git@github.com:liblack99/biblioteca.git
 
 2. Accede al directorio del proyecto e instala las dependencias:
 
