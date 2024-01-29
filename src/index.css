@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: rgba(0, 0, 0, 10);
+}
+html {
+  font-family: "Onest Variable", sans-serif;
+}
+
+.main__one-columns {
+  gap: 12px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+@keyframes deploy {
+  0% {
+    opacity: 0;
+    height: 0%;
+  }
+  100% {
+    opacity: 1;
+    height: 100%;
+  }
+}
+
+.description {
+  position: absolute;
+  animation: deploy 0.3s ease-in-out;
+  background-color: rgba(0, 0, 0, 0.9);
+  height: 100%;
+}
+
+.description__book {
+  position: absolute;
+  height: 0;
+  display: flex;
+  flex-direction: column;
+  display: none;
+}
+
+.zoomOut {
+  animation-name: zoomOut;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+@keyframes zoomOut {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  100% {
+    opacity: 0;
+  }
+}
