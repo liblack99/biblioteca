@@ -12,9 +12,9 @@ Para instalar la biblioteca, sigue estos pasos:
 
 1. Clona este repositorio:
 
-git clone https://github.com/tuusuario/biblioteca-lectura-react.git
+git clone 
 
-2.Accede al directorio del proyecto e instala las dependencias:
+2. Accede al directorio del proyecto e instala las dependencias:
 
 cd biblioteca-lectura-react
 npm install
