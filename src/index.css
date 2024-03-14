@@ -3,16 +3,11 @@
 @tailwind utilities;
 
 body {
-  background-color: rgba(0, 0, 0, 10);
+  background-color: #111111;
 }
 html {
-  font-family: "Onest Variable", sans-serif;
-}
-
-.main__one-columns {
-  gap: 12px;
-  width: 90%;
-  margin: 0 auto;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 @keyframes deploy {
@@ -28,7 +23,7 @@ html {
 
 .description {
   position: absolute;
-  animation: deploy 0.3s ease-in-out;
+  animation: deploy 0.3s ease-in;
   background-color: rgba(0, 0, 0, 0.9);
   height: 100%;
 }
@@ -36,9 +31,7 @@ html {
 .description__book {
   position: absolute;
   height: 0;
-  display: flex;
-  flex-direction: column;
-  display: none;
+  opacity: 0;
 }
 
 .zoomOut {

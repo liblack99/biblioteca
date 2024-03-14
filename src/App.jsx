@@ -1,7 +1,7 @@
-import Header from "./Components/Header";
-import Layout from "./Components/Layout";
-import Books from "./Components/Books";
-import ReadingList from "./Components/ReadingList";
+import Header from "./components/Header";
+import Layout from "./components/Layout";
+import Books from "./components/Books";
+import ReadingList from "./components/ReadingList";
 import { BooksProvider } from "./context/BooksContext";
 
 function App() {

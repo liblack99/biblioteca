@@ -4,7 +4,7 @@ function FiltersPages({ maxPage, handleChange }) {
   return (
     <label
       htmlFor="rangePage"
-      className="flex flex-col text-2xl text-white mt-2 w-[300px]">
+      className="flex flex-col text-2xl text-[#E2e8f0] mt-2 w-[330px] ">
       filtrar por paginas
       <div className="flex gap-2">
         <input

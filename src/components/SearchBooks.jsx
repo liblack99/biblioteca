@@ -6,8 +6,8 @@ function SearchBooks({ value, handleChangeSearch }) {
       type="text"
       value={value}
       onChange={(event) => handleChangeSearch(event)}
-      placeholder="Busca tu libro preferido"
-      className="rounded-lg border border-black w-80 p-4  focus:outline-none"
+      placeholder="Buscar"
+      className="rounded-lg border bg-[#E2e8f0] border-black w-80 h-12 pl-2  focus:outline-none mt-4"
     />
   );
 }

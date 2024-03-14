@@ -1,5 +1,7 @@
-import React from "react";
-
 export default function Layout({ children }) {
-  return <main className="main__one-columns">{children}</main>;
+  return (
+    <main className="w-full flex flex-row gap-4 flex-wrap md:flex-wrap sm:flex-wrap lg:flex-wrap md:flex-col lg:flex-row sm:flex-col">
+      {children}
+    </main>
+  );
 }

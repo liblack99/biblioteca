@@ -10,8 +10,8 @@ function Header() {
   return (
     <header className="w-full h-20 flex flex-col items-center justify-center  ">
       <nav className="w-full h-full flex items-center justify-center relative ">
-        <h1 className="text-6xl text-white font-bold pl-20">Biblioteca📚</h1>
-        {!openReadList && (
+        <h1 className="text-6xl text-[#E2e8f0] font-bold pl-20">Biblioteca</h1>
+        {
           <div className="flex justify-center items-center absolute right-10">
             <FontAwesomeIcon
               icon={faBookBookmark}
@@ -22,7 +22,7 @@ function Header() {
               {booksToReadList.length}
             </span>
           </div>
-        )}
+        }
       </nav>
     </header>
   );

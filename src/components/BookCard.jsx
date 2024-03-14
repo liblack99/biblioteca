@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 function BookCard({ book, index, addToReadList, deleteToReadList }) {
   const [hover, setHover] = useState(false);
   const [id, setId] = useState(null);
   const [click, setClick] = useState(false);
+
   return (
     <div
       className={`${click && "zoomOut"} relative`}
@@ -21,15 +22,15 @@ function BookCard({ book, index, addToReadList, deleteToReadList }) {
           hover && id === index ? "description" : "description__book"
         }  p-4 `}>
         <span className="text-white flex flex-col gap-1 ">
-          <h2 className="font-bold text-xl">{book.title}</h2>
-          <h3 className="font-semibold">Genero: {book.genre}</h3>
-          <h3 className="font-semibold">Autor: {book.author.name}</h3>
+          <h2 className="font-bold text-sm">{book.title}</h2>
+          <h3 className="font-semibold text-sm">Genero: {book.genre}</h3>
+          <h3 className="font-semibold text-sm">Autor: {book.author.name}</h3>
         </span>
-        <p className="text-white pt-2">{book.synopsis}</p>
-        <div className="w-full flex justify-center">
+        <p className="text-white text-sm pt-2">{book.synopsis}</p>
+        <div className="flex justify-center items-center">
           {addToReadList ? (
             <button
-              className="text-white absolute  bottom-4 border  border-white rounded-lg p-2 hover:text-black hover:bg-white"
+              className="absolute  bottom-3 text-white w-[150px] border text-[12px]  border-white rounded-lg hover:text-black hover:bg-white"
               onClick={() => {
                 setClick(true);
                 setTimeout(() => {
@@ -41,7 +42,7 @@ function BookCard({ book, index, addToReadList, deleteToReadList }) {
           ) : null}
           {deleteToReadList ? (
             <button
-              className="text-white absolute  bottom-4   border border-white rounded-lg p-2 hover:text-black hover:bg-white"
+              className="absolute bottom-3 text-white w-[150px] border text-[12px] border-white rounded-lg  hover:text-black hover:bg-white"
               onClick={() => {
                 setClick(true);
                 setTimeout(() => {

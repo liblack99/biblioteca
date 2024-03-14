@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import { useContext, useState } from "react";
 import BookCard from "./BookCard.jsx";
 
 import { BooksContext } from "../context/BooksContext.jsx";
@@ -53,24 +53,24 @@ function Books() {
   };
 
   return (
-    <div className="flex flex-col gap-4 pl-6 relative mb-20 mt-6">
-      <div className="flex  gap-[150px] items-center  w-full">
-        <h2 className="text-white text-4xl">
+    <div className="flex flex-col gap-4 pl-6 relative mb-20 mt-6 w-[60%] h-full sm:w-[90%] md:w-[90%] lg:w-[60%]">
+      <div className="flex justify-between items-center w-full flex-wrap">
+        <h2 className="text-[#E2e8f0] text-4xl">
           {books.length} Libros disponible
         </h2>
-      </div>
-      <div className="flex items-center justify-between md:flex-wrap sm:flex-wrap">
-        <FiltersPages maxPage={filters.maxPage} handleChange={handleChange} />
         <SearchBooks
           value={filters.name}
           handleChangeSearch={handleChangeSearch}
         />
+      </div>
+      <div className="flex items-center justify-between flex-wrap md:flex-wrap sm:flex-wrap">
+        <FiltersPages maxPage={filters.maxPage} handleChange={handleChange} />
         <FiltersByCategory
           genresBooks={genresBooks}
           handleChangeGenres={handleChangeGenres}
         />
       </div>
-      <div className="grid grid-cols-[repeat(auto-fill,minmax(200px,1fr))] gap-8 h-[auto]">
+      <div className="grid grid-cols-[repeat(auto-fill,minmax(180px,1fr))] gap-2">
         {booksFilters.map((book, index) => (
           <BookCard
             key={book.ISBN}

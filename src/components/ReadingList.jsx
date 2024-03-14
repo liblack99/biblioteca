@@ -5,30 +5,23 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faX } from "@fortawesome/free-solid-svg-icons";
 
 function ReadingList() {
-  const { booksToReadList, deleteToReadList, openReadList, setOpenReadList } =
-    useContext(BooksContext);
+  const { booksToReadList, deleteToReadList } = useContext(BooksContext);
 
   return (
-    <aside
-      className={`${
-        openReadList ? "flex" : "hidden"
-      } fixed h-full flex items-center flex-col overflow-y-scroll top-0 right-0 w-[600px] bg-black`}>
-      <FontAwesomeIcon
-        icon={faX}
-        className="text-white absolute text-2xl right-0 p-4 cursor-pointer"
-        onClick={() => setOpenReadList(false)}
-      />
-      <h2 className="text-white text-4xl pt-[20px] mb-[20px]">
+    <aside className="flex h-[1000px] border border-white flex-col w-[35%] overflow-y-auto  p-4 bg-[#12171b] rounded-lg mt-[20px]  sm:w-[90%] md:w-[90%] lg:w-[35%] ml-6  ">
+      <h2 className="text-[#E2e8f0]  text-4xl text-center mb-8">
         Lista de lectura
       </h2>
-      <div className="w-[90%] h-[auto]  grid grid-cols-[repeat(auto-fill,minmax(180px,1fr))]  gap-8 p-8">
-        {booksToReadList?.map((book) => (
-          <BookCard
-            key={book.ISBN}
-            book={book}
-            deleteToReadList={deleteToReadList}
-          />
-        ))}
+      <div className="w-full flex justify-center">
+        <div className="grid grid-cols-[repeat(auto-fill,minmax(160px,1fr))] gap-2 w-[90%] place-content-center">
+          {booksToReadList?.map((book) => (
+            <BookCard
+              key={book.ISBN}
+              book={book}
+              deleteToReadList={deleteToReadList}
+            />
+          ))}
+        </div>
       </div>
     </aside>
   );
