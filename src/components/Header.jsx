@@ -8,7 +8,7 @@ function Header() {
   const { booksToReadList, openReadList, setOpenReadList } =
     useContext(BooksContext);
   return (
-    <header className="w-full h-20 flex flex-col items-center justify-center  ">
+    <header className="w-full h-20 flex flex-col items-center justify-center md:justify-start sm:justify-start  ">
       <nav className="w-full h-full flex items-center justify-center relative ">
         <h1 className="text-6xl text-[#E2e8f0] font-bold pl-20">Biblioteca</h1>
         {
