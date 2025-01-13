@@ -8,7 +8,7 @@ Puedes ver una demostración del proyecto [aquí](https://biblioteca-ashy.vercel
 
 ## Capturas de pantalla
 
-![biblioteca](https://i.imgur.com/qMwACWx.png)
+![biblioteca](https://firebasestorage.googleapis.com/v0/b/pelagic-earth-407809.appspot.com/o/proyectos%2Fbiblioteca.webp?alt=media&token=af46d1e2-dcae-4435-b703-9b7d9b59a56a)
 
 ## Características
 
